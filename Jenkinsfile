@@ -1,5 +1,6 @@
 node {
-    stage('Stage 1') {
-        echo 'hello'
+   stage('Clone repository') {
+        checkout scm
     }
+    
 }
