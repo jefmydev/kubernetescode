@@ -3,7 +3,7 @@ node {
         checkout scm
     }
    stage('Build image') {
-       app = docker.build("kubernetescode/test")
+       app = docker.build("jefriekussuma/myflask-app")
     }
    stage('Test image') {
         app.inside {
